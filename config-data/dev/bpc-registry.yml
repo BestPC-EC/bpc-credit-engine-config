@@ -13,5 +13,5 @@ eureka:
 spring:
   security:
     user:
-      name: eurekaserveruser
-      password: eurekaserverpassword
+      name: root
+      password: s3cr3t
