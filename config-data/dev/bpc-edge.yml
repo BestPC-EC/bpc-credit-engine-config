@@ -14,6 +14,8 @@ eureka:
   client:
     service-url:
       defaultZone: http://${EUREKA_USER}:${EUREKA_PASSWORD}@${EUREKA_HOSTNAME}:${EUREKA_PORT}/eureka
+  instance:
+    preferIpAddress: true
 
 #Log
 logging:
