@@ -1,0 +1,31 @@
+server:
+  port: 8999
+spring:
+  application:
+    name: bpc-edge
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: ${AUTH0_ISSUER_URI} #Propiedad para configurar seguridad con Auth0
+
+#EurekaClient
+eureka:
+  client:
+    service-url:
+      defaultZone: http://${EUREKA_USER}:${EUREKA_PASSWORD}@${EUREKA_HOSTNAME}:${EUREKA_PORT}/eureka
+
+#Log
+logging:
+  level:
+    root: info
+    org.springframework.cloud.gateway: trace
+    org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator: info
+
+#auth0:
+#  audience: ${AUTH0_AUDIENCE}
+#
+web:
+  cors:
+    allowed-origins: ${CORS_ALLOWED_ORIGINS}
+      
