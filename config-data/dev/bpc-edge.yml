@@ -22,9 +22,9 @@ logging:
     org.springframework.cloud.gateway: trace
     org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator: info
 
-#auth0:
-#  audience: ${AUTH0_AUDIENCE}
-#
+auth0:
+  audience: ${AUTH0_AUDIENCE}
+
 web:
   cors:
     allowed-origins: ${CORS_ALLOWED_ORIGINS}
