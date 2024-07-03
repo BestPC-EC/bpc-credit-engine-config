@@ -3,11 +3,11 @@ server:
 spring:
   application:
     name: bpc-edge
-  #security:
-    #oauth2:
-      #resourceserver:
-        #jwt:
-          #issuer-uri: ${AUTH0_ISSUER_URI} #Propiedad para configurar seguridad con Auth0
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: ${AUTH0_ISSUER_URI}
 
 #EurekaClient
 eureka:
