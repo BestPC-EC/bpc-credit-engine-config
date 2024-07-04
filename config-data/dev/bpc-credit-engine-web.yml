@@ -1,8 +1,6 @@
 server:
   port: 8091
 spring:
-  application:
-    name: bpc-credit-engine-web
   datasource:
     driverClassName: org.mariadb.jdbc.Driver
     url: jdbc:mariadb://${RDS_HOSTNAME}:${RDS_PORT}/${RDS_DB_NAME}?autoReconnect=true
