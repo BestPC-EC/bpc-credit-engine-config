@@ -33,7 +33,7 @@ api:
   web-scrapping-provider:
     url: "lb://web-scrapping-provider/credit-engine/api/v1/scrapping/consulta/funcion-judicial/document-list"
   credit-decision-engine:
-    url: "http://localhost:9090/credit-decision/calificacion"
+    url: ${CREDIT_ENGINE_URL}
 
 octoparse:
   username: ${O_USERNAME}
