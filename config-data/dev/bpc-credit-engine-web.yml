@@ -34,6 +34,8 @@ api:
     url: "lb://web-scrapping-provider/credit-engine/api/v1/scrapping/consulta/funcion-judicial/document-list"
   credit-decision-engine:
     url: ${CREDIT_ENGINE_URL}
+  buro-experto:
+    url: ${BURO_EXPERTO_URL}
 
 octoparse:
   username: ${O_USERNAME}
