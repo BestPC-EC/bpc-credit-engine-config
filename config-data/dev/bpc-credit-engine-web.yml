@@ -46,7 +46,7 @@ aws:
   accessKeyId: ${AWS_ACCESSKEYID}
   secretKey: ${AWS_SECRETKEY}
   presignedUrl:
-    duration: 600000
+    expiration: 600000
 
 as2:
   sistema: ${AS2_SISTEMA}
