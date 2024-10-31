@@ -1,11 +1,5 @@
 server:
   port: 8093
-spring:
-  datasource:
-    driverClassName: org.mariadb.jdbc.Driver
-    url: jdbc:mariadb://${RDS_HOSTNAME}:${RDS_PORT}/${RDS_DB_NAME}?autoReconnect=true
-    username: ${RDS_USERNAME}
-    password: ${RDS_PASSWORD}
   devtools:
     restart:
       enable: false
@@ -14,13 +8,7 @@ spring:
       request-timeout: 360000
   codec:
     max-in-memory-size: 5MB
-
-  jpa:
-    show-sql: false
-    hibernate:
-      ddl-auto: none
-    database-platform: org.hibernate.dialect.MariaDBDialect
-
+    
 #EurekaClient
 eureka:
   client:
