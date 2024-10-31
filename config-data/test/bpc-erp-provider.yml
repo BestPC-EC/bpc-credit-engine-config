@@ -1,0 +1,25 @@
+server:
+  port: 8093
+  devtools:
+    restart:
+      enable: false
+  mvc:
+    async:
+      request-timeout: 360000
+  codec:
+    max-in-memory-size: 5MB
+    
+#EurekaClient
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://${EUREKA_USER}:${EUREKA_PASSWORD}@${EUREKA_HOSTNAME}:${EUREKA_PORT}/eureka
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+
+as2:
+  sistema: ${AS2_SISTEMA}
+  nombreUsuario: ${AS2_NOMBRE_USUARIO}
+  clave: ${AS2_CLAVE}
+  rol: ${AS2_ROL}
+  url: ${AS2_BASE_URL}
