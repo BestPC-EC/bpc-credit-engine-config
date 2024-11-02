@@ -15,3 +15,6 @@ spring:
     user:
       name: ${EUREKA_USER}
       password: ${EUREKA_PASSWORD}
+logging:
+  level:
+    com.netflix.discovery: DEBUG
