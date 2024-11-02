@@ -17,6 +17,7 @@ spring:
 
   jpa:
     show-sql: false
+    open-in-view: false
     hibernate:
       ddl-auto: none
 
