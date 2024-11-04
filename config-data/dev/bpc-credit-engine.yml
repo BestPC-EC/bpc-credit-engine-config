@@ -62,7 +62,10 @@ ado:
   returnVideoLiveness: ${ADO_VIDEO_LIVENESS}
 
 uipath:
-    grantType: ${UIPATH_GRANT_TYPE}
-    clientId: ${UIPATH_CLIENT_ID}
-    refreshToken: ${UIPATH_REFRESH_TOKEN}
+  grantType: ${UIPATH_GRANT_TYPE}
+  clientId: ${UIPATH_CLIENT_ID}
+  refreshToken: ${UIPATH_REFRESH_TOKEN}
 
+equifax:
+  usuario: ${EQUIFAX_USUARIO}
+  clave: ${EQUIFAX_CLAVE}
