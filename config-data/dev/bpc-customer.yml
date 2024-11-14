@@ -29,3 +29,9 @@ as2:
   clave: ${AS2_CLAVE}
   rol: ${AS2_ROL}
   url: ${AS2_BASE_URL}
+
+aws:
+  accessKeyId: ${AWS_ACCESSKEYID}
+  secretKey: ${AWS_SECRETKEY}
+  presignedUrl:
+    expiration: ${AWS_PRESIGNED_URL_DURATION}
