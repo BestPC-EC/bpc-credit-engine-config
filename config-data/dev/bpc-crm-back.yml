@@ -30,4 +30,5 @@ eureka:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
 
 api:
-  as2-url: http://172.171.197.97:8020/AS2/rest
+  as2:
+    url: http://172.171.197.97:8020/AS2/rest
