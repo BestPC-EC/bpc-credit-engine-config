@@ -15,6 +15,12 @@ spring:
   devtools:
     restart:
       enable: false
+  mvc:
+    async:
+      request-timeout: 360000
+  codec:
+    max-in-memory-size: 5MB
+    
   jpa:
     show-sql: false
     hibernate:
