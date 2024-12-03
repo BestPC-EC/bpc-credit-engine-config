@@ -28,3 +28,7 @@ eureka:
       defaultZone: http://${EUREKA_USER}:${EUREKA_PASSWORD}@${EUREKA_HOSTNAME}:${EUREKA_PORT}/eureka
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+
+ api:
+  as2:
+    url: http://172.171.197.97:8020/AS2/rest
