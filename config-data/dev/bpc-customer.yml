@@ -1,5 +1,11 @@
 server:
   port: 8090
+  tomcat:
+    connection-timeout: 30000 # Timeout de conexión (30 segundos)
+    max-threads: 200 # Ajusta el número de threads disponibles
+  servlet:
+    session:
+      timeout: 5m # Tiempo de sesión en minutos
 spring:
   cloud:
     gateway:
