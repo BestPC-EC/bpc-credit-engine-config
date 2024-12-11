@@ -60,6 +60,7 @@ aws:
 
 powerAutomate:
   url: ${POWER_AUTOMATE_URL}
+  path: ${POWER_AUTOMATE_PATH}
   apiVersion: ${POWER_AUTOMATE_API}
   sp: ${POWER_AUTOMATE_SP}
   sv: ${POWER_AUTOMATE_SV}
