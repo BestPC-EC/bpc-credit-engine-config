@@ -59,7 +59,7 @@ aws:
     expiration: ${AWS_PRESIGNED_URL_DURATION}
 
 powerAutomate:
-  url: ${POWER_AUTOMATE_URL}
+  url: ${POWER_AUTOMATE_URL:https://prod-06.brazilsouth.logic.azure.com:443}
   path: ${POWER_AUTOMATE_PATH}
   apiVersion: ${POWER_AUTOMATE_API}
   sp: ${POWER_AUTOMATE_SP}
