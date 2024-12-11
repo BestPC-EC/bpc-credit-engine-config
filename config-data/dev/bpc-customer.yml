@@ -60,8 +60,8 @@ aws:
 
 powerAutomate:
   url: https://prod-06.brazilsouth.logic.azure.com:443/workflows/67f7858f48e04fcab07dec2f1a17223e/triggers/manual/paths/invoke
-  apiVersion: 2016-06-01
-  sp: /triggers/manual/run
-  sv: 1.0
-  sig: t1M1smeP0KOU6aetP7pnNKvK3sOP04ZzniipeaZ6qCc
+  apiVersion: "2016-06-01"
+  sp: "/triggers/manual/run"
+  sv: "1.0"
+  sig: "t1M1smeP0KOU6aetP7pnNKvK3sOP04ZzniipeaZ6qCc"
   
