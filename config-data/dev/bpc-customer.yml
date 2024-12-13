@@ -1,7 +1,7 @@
 server:
   port: 8090
   tomcat:
-    connection-timeout: 30000 # Timeout de conexión (30 segundos)
+    connection-timeout: 90000 # Timeout de conexión (90 segundos)
     max-threads: 200 # Ajusta el número de threads disponibles
   servlet:
     session:
