@@ -22,7 +22,7 @@ spring:
           enabled: true
   security:
     oauth2:
-      resourceserver:
+      resource-server:
         jwt:
           issuer-uri: ${AUTH0_ISSUER_URI}
 
