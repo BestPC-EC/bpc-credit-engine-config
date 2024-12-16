@@ -14,7 +14,7 @@ spring:
     name: bpc-edge
   cloud:
     gateway:
-       httpclient:
+      httpclient:
         connect-timeout: 90000 # Timeout de conexión (90 segundos)
         response-timeout: 300000 # Timeout de respuesta (5 minutos)
       discovery:
