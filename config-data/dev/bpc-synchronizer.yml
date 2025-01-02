@@ -1,0 +1,41 @@
+server:
+  port: 8087
+spring:
+  r2dbc:
+    url: r2dbc:mariadb://${RDS_HOSTNAME}:${RDS_PORT}/${RDS_DB_NAME}?autoReconnect=true
+    username: ${RDS_USERNAME}
+    password: ${RDS_PASSWORD}
+  data:
+    r2dbc:
+      repositories:
+        enabled: true
+  devtools:
+    restart:
+      enable: false
+  mvc:
+    async:
+      request-timeout: 360000
+  codec:
+    max-in-memory-size: 5MB
+  webflux:
+    session:
+      timeout: 120s
+    netty:
+      idle-timeout: 120s
+  jpa:
+    show-sql: false
+    open-in-view: false
+    hibernate:
+      ddl-auto: none
+
+#EurekaClient
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://${EUREKA_USER}:${EUREKA_PASSWORD}@${EUREKA_HOSTNAME}:${EUREKA_PORT}/eureka
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+
+api:
+  as2:
+    url: http://172.171.197.97:8020/AS2/rest
