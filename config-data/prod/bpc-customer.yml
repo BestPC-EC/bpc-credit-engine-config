@@ -1,0 +1,63 @@
+server:
+  port: 8090
+  tomcat:
+    connection-timeout: 90000
+    max-threads: 200 # Ajusta el número de threads disponibles
+  servlet:
+    session:
+      timeout: 5m
+spring:
+  cloud:
+    gateway:
+      httpclient:
+        connect-timeout: 30000 # Timeout de conexión en milisegundos
+        response-timeout: 300000 # Timeout de respuesta en milisegundos (5 minutos)
+    discovery:
+      enabled: true
+    loadbalancer:
+      ribbon:
+        enabled: false
+  datasource:
+    driverClassName: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://${RDS_HOSTNAME}:${RDS_PORT}/${RDS_DB_NAME}?autoReconnect=true
+    username: ${RDS_USERNAME}
+    password: ${RDS_PASSWORD}
+  devtools:
+    restart:
+      enable: false
+  mvc:
+    async:
+      request-timeout: 600000
+  codec:
+    max-in-memory-size: 5MB
+    
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: none
+    database-platform: org.hibernate.dialect.MariaDBDialect
+
+#EurekaClient
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://${EUREKA_USER}:${EUREKA_PASSWORD}@${EUREKA_HOSTNAME}:${EUREKA_PORT}/eureka
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+
+as2:
+  sistema: ${AS2_SISTEMA}
+  nombreUsuario: ${AS2_NOMBRE_USUARIO}
+  clave: ${AS2_CLAVE}
+  rol: ${AS2_ROL}
+  url: ${AS2_BASE_URL}
+
+aws:
+  accessKeyId: ${AWS_ACCESSKEYID}
+  secretKey: ${AWS_SECRETKEY}
+  presignedUrl:
+    expiration: ${AWS_PRESIGNED_URL_DURATION}
+
+api:
+  buro-experto:
+    url: ${BURO_EXPERTO_URL}
