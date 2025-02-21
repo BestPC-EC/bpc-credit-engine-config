@@ -3,7 +3,7 @@ server:
 spring:
   datasource:
     driverClassName: org.mariadb.jdbc.Driver
-    url: jdbc:mariadb://${RDS_HOSTNAME}:${RDS_PORT}/${RDS_DB_NAME}?autoReconnect=true
+    url: jdbc:mariadb://${RDS_HOSTNAME}:${RDS_PORT}/${RDS_DB_NAME}
     username: ${RDS_USERNAME}
     password: ${RDS_PASSWORD}
   devtools:
@@ -16,9 +16,9 @@ spring:
     max-in-memory-size: 5MB
 
   jpa:
-    show-sql: false
+    show-sql: true
     hibernate:
-      ddl-auto: none
+      ddl-auto: update
     database-platform: org.hibernate.dialect.MariaDBDialect
 
 #EurekaClient
