@@ -40,4 +40,4 @@ api:
   as2:
     url: http://172.171.197.97:8020/AS2/rest
   bpc-erp-source:
-    url: lb://bpc-erp-source/crm/api/v1/source
+    url: lb://bpc-erp-source/erp/api/v1/source
