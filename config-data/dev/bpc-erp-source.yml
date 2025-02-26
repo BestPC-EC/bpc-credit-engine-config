@@ -5,6 +5,13 @@ spring:
     url: r2dbc:postgresql://${RDS_HOSTNAME}:${RDS_PORT}/${RDS_DB_NAME}
     username: ${RDS_USERNAME}
     password: ${RDS_PASSWORD}
+    pool:
+      max-size: 10
+      initial-size: 2
+      validation-query: "SELECT 1"
+      max-idle-time: 30s
+      max-acquire-time: 30s
+      max-create-connection-time: 30s
   data:
     r2dbc:
       repositories:
