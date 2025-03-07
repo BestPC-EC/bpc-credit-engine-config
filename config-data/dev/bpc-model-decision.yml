@@ -1,11 +1,6 @@
 server:
   port: 9090
 spring:
-  application:
-    name: bpc-model-decision
-  cloud:
-    discovery:
-      enable: true
   datasource:
     driverClassName: org.mariadb.jdbc.Driver
     url: jdbc:mariadb://${RDS_HOSTNAME}:${RDS_PORT}/${RDS_DB_NAME}
