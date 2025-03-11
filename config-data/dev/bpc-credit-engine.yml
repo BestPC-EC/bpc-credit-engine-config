@@ -37,7 +37,7 @@ api:
   buro-experto:
     url: ${BURO_EXPERTO_URL}
 
-convert-api:
+convertapi:
   secretKey: ${CONVERTAPI_KEY}
 
 octoparse:
