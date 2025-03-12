@@ -40,6 +40,9 @@ eureka:
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
 
+convertapi:
+  secretKey: ${CONVERTAPI_KEY}
+
 api:
   web-scrapping-provider:
     url: "lb://web-scrapping-provider/credit-engine/api/v1/scrapping/consulta/funcion-judicial/document-list"
