@@ -28,7 +28,6 @@ spring:
       request-timeout: 360000
   codec:
     max-in-memory-size: 5MB
-
 #EurekaClient
 eureka:
   client:
