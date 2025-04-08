@@ -36,6 +36,8 @@ api:
     url: ${CREDIT_ENGINE_URL}
   buro-experto:
     url: ${BURO_EXPERTO_URL}
+    user-id: ${BURO_EXPERTO_USERID}
+    user-name: ${BURO_EXPERTO_USERNAME}
   bpc-crm:
     url: ${BPC_CRM_URL}
   bpc-parameter:
