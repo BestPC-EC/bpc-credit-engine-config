@@ -57,10 +57,13 @@ aws:
   secretKey: ${AWS_SECRETKEY}
   presignedUrl:
     expiration: ${AWS_PRESIGNED_URL_DURATION}
+  bucketName: ${BUCKET_NAME}
 
 api:
   buro-experto:
     url: ${BURO_EXPERTO_URL}
+    user-id: ${BURO_EXPERTO_USERID}
+    user-name: ${BURO_EXPERTO_USERNAME}
   bpc-parameter:
     url: ${BPC_PARAMETER_URL}
   bpc-scrapping-provider:
