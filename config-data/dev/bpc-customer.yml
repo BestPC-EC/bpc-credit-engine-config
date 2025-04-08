@@ -61,3 +61,15 @@ aws:
 api:
   buro-experto:
     url: ${BURO_EXPERTO_URL}
+  bpc-parameter:
+    url: ${BPC_PARAMETER_URL}
+  bpc-scrapping-provider:
+    url: ${BPC_SCRAPPING_PROVIDER}
+
+power-automate:
+  base-url: ${PA_BASE_URL}
+  path: ${PA_PATH}
+  api-version: ${PA_API_VERSION}
+  sp: ${PA_SP}
+  sv: ${PA_SV}
+  sig: ${PA_SIG}
