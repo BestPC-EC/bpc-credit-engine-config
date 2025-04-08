@@ -64,7 +64,7 @@ api:
   bpc-parameter:
     url: ${BPC_PARAMETER_URL}
   bpc-scrapping-provider:
-    url: ${BPC_SCRAPPING_PROVIDER}
+    url: ${BPC_SCRAPPING_PROVIDER_URL}
 
 power-automate:
   base-url: ${PA_BASE_URL}
