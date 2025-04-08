@@ -40,27 +40,27 @@ eureka:
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
 
-convertapi:
-  secretKey: ${CONVERTAPI_KEY}
-
 api:
-  web-scrapping-provider:
-    url: "lb://web-scrapping-provider/credit-engine/api/v1/scrapping/consulta/funcion-judicial/document-list"
+  bpc-scrapping-provider:
+    url: ${BPC_SCRAPPING_PROVIDER}
   credit-decision-engine:
     url: ${CREDIT_ENGINE_URL}
   buro-experto:
     url: ${BURO_EXPERTO_URL}
+  bpc-crm:
+    url: ${BPC_CRM_URL}
+  bpc-parameter:
+    url: ${BPC_PARAMETER_URL}
 
-octoparse:
-  username: ${O_USERNAME}
-  password: ${O_PASSWORD}
-  grantType: ${O_GRANT_TYPE}
+convertapi:
+  secretKey: ${CONVERTAPI_KEY}
 
 aws:
   accessKeyId: ${AWS_ACCESSKEYID}
   secretKey: ${AWS_SECRETKEY}
   presignedUrl:
     expiration: ${AWS_PRESIGNED_URL_DURATION}
+  bucketName: ${BUCKET_NAME}
 
 as2:
   sistema: ${AS2_SISTEMA}
@@ -75,11 +75,14 @@ ado:
   returnDocuments: ${ADO_RETURN_DOCUMENTS}
   returnVideoLiveness: ${ADO_VIDEO_LIVENESS}
 
-uipath:
-  grantType: ${UIPATH_GRANT_TYPE}
-  clientId: ${UIPATH_CLIENT_ID}
-  refreshToken: ${UIPATH_REFRESH_TOKEN}
-
 equifax:
   usuario: ${EQUIFAX_USUARIO}
   clave: ${EQUIFAX_CLAVE}
+
+power-automate:
+  base-url: ${PA_BASE_URL}
+  path: ${PA_PATH}
+  api-version: ${PA_API_VERSION}
+  sp: ${PA_SP}
+  sv: ${PA_SV}
+  sig: ${PA_SIG}
