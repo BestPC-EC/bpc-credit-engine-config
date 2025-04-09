@@ -42,7 +42,7 @@ eureka:
 
 api:
   bpc-scrapping-provider:
-    url: ${BPC_SCRAPPING_PROVIDER}
+    url: ${BPC_SCRAPPING_PROVIDER_URL}
   credit-decision-engine:
     url: ${CREDIT_ENGINE_URL}
   buro-experto:
