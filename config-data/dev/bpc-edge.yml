@@ -25,6 +25,10 @@ spring:
           uri: lb://bpc-security
           predicates:
             - Path=/signer/api/v1/auth/**,/signer/api/v1/test/**
+        - id: management-service
+          uri: lb://bpc-management
+          predicates:
+            - Path=/api/v1/management/**
   security:
     oauth2:
       resourceserver:
