@@ -20,6 +20,11 @@ spring:
       discovery:
         locator:
           enabled: true
+      routes:
+        - id: security-service
+          uri: lb://bpc-security
+          predicates:
+            - Path=/signer/api/v1/auth/**,/signer/api/v1/test/**
   security:
     oauth2:
       resourceserver:
