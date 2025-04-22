@@ -75,4 +75,10 @@ power-automate:
   api-version: ${PA_API_VERSION}
   sp: ${PA_SP}
   sv: ${PA_SV}
-  sig: ${PA_SIG}  
+  sig: ${PA_SIG}
+
+bot:
+  webdatos:
+    durationMilis: ${WEBDATOS_TIMEOUT_MILIS}
+  fjudicial:
+    durationMilis: ${FJUDICIAL_TIMEOUT_MILIS}
