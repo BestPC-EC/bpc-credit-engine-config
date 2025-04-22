@@ -88,3 +88,11 @@ power-automate:
   sp: ${PA_SP}
   sv: ${PA_SV}
   sig: ${PA_SIG}
+
+bot:
+  afiliacion:
+    durationMilis: ${AFILIACION_TIMEOUT_MILIS}
+  fjudicial:
+    durationMilis: ${FJUDICIAL_TIMEOUT_MILIS}
+  sri:
+    durationMilis: ${SRI_TIMEOUT_MILIS}
