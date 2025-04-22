@@ -50,10 +50,3 @@ logging:
   pattern:
     console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
 
-bot:
-  webdatos:
-    durationMilis: ${WEBDATOS_TIMEOUT_MILIS}
-  fjudicial:
-    durationMilis: ${FJUDICIAL_TIMEOUT_MILIS}
-  sri:
-    durationMilis: ${SRI_TIMEOUT_MILIS}
