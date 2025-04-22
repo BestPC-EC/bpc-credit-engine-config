@@ -79,8 +79,8 @@ power-automate:
   sig: ${PA_SIG}
 
 bot:
-  webdatos:
-    durationMilis: ${WEBDATOS_TIMEOUT_MILIS}
+  afiliacion:
+    durationMilis: ${AFILIACION_TIMEOUT_MILIS}
   fjudicial:
     durationMilis: ${FJUDICIAL_TIMEOUT_MILIS}
   sri:
