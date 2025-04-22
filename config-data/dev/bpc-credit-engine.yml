@@ -42,6 +42,8 @@ api:
     url: ${BPC_CRM_URL}
   bpc-parameter:
     url: ${BPC_PARAMETER_URL}
+  bpc-synchronizer:
+    url: ${BPC_SYNCHRONIZER_URL}
 
 convertapi:
   secretKey: ${CONVERTAPI_KEY}
