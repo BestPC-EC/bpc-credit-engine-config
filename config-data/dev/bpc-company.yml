@@ -12,10 +12,14 @@ spring:
     username: ${RDS_USERNAME}
     password: ${RDS_PASSWORD}
   jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MariaDB103Dialect
     show-sql: false
     open-in-view: false
     hibernate:
-      ddl-auto: validate
+      ddl-auto: none
+    database-platform: org.hibernate.dialect.MariaDBDialect
   mvc:
     async:
       request-timeout: 360000
@@ -24,6 +28,8 @@ spring:
 #EurekaClient
 eureka:
   client:
+    register-with-eureka: true
+    fetch-registry: true
     serviceUrl:
       defaultZone: http://${EUREKA_USER}:${EUREKA_PASSWORD}@${EUREKA_HOSTNAME}:${EUREKA_PORT}/eureka
   instance:
