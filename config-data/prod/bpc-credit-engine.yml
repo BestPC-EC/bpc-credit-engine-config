@@ -24,7 +24,7 @@ spring:
     async:
       request-timeout: 600000
   codec:
-    max-in-memory-size: 5MB
+    max-in-memory-size: 60MB
 
   jpa:
     show-sql: false
