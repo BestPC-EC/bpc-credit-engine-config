@@ -44,6 +44,8 @@ api:
     url: ${BPC_PARAMETER_URL}
   bpc-synchronizer:
     url: ${BPC_SYNCHRONIZER_URL}
+  bpc-sri-public:
+    url: ${BPC_SRI_PUBLIC_URL}
 
 convertapi:
   secretKey: ${CONVERTAPI_KEY}
