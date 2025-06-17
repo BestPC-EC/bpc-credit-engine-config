@@ -42,6 +42,6 @@ api:
   bpc-synchronizer:
     url: lb://bpc-synchronizer/erp/api/v1/synchronizer
   bpc-security:
-    url: lb://bpc-management
+    url: lb://bpc-security
   bpc-company:
     url: lb://bpc-company
