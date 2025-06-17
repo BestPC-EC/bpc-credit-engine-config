@@ -41,3 +41,6 @@ api:
     url: http://172.171.197.97:8020/AS2/rest
   bpc-synchronizer:
     url: lb://bpc-synchronizer/erp/api/v1/synchronizer
+  bpc-security:
+    url: lb://bpc-management/signer/api/v1/management
+  
