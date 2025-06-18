@@ -43,5 +43,7 @@ api:
     url: lb://bpc-synchronizer/erp/api/v1/synchronizer
   bpc-security:
     url: lb://bpc-security/signer/api/v1/auth
+    url2: lb://bpc-security/api/v1/management
   bpc-company:
     url: lb://bpc-company/credit-engine/api/v1/company
+  
