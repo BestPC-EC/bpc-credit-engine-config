@@ -43,7 +43,8 @@ api:
     url: lb://bpc-synchronizer/erp/api/v1/synchronizer
   bpc-security:
     url: lb://bpc-security/signer/api/v1/auth
-    url2: lb://bpc-security/api/v1/management
+  bpc-management:
+    url: lb://bpc-management/api/v1/management
   bpc-company:
     url: lb://bpc-company/api/v1/company
   
