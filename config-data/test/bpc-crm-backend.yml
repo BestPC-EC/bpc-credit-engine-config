@@ -39,11 +39,6 @@ eureka:
 api:
   as2:
     url: http://172.171.197.97:8020/AS2/rest
-  bpc-erp-synchronizer:
-    url: lb://bpc-erp-synchronizer/erp/api/v1/synchronizer
-    api:
-  as2:
-    url: http://172.171.197.97:8020/AS2/rest
   bpc-synchronizer:
     url: lb://bpc-synchronizer/erp/api/v1/synchronizer
   bpc-security:
@@ -52,3 +47,4 @@ api:
     url: lb://bpc-management/api/v1/management
   bpc-company:
     url: lb://bpc-company/api/v1/company
+  
