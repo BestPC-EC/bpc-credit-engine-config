@@ -24,3 +24,5 @@ logging:
 api:
   bpc-credit-engine:
     url: http://bpc-credit-engine
+  bpc-parameter:
+    url: http://bpc-parameter/credit-engine/api/v1/parameter/policy/find
