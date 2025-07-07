@@ -2,7 +2,7 @@ server:
   port: 8094
 spring:
   r2dbc:
-    url: r2dbc:postgresql://${RDS_HOSTNAME}:${RDS_PORT}/${RDS_DB_NAME}
+    url: r2dbc:postgresql://${RDS_HOSTNAME}:${RDS_PORT}/${RDS_DB_NAME}?ssl=true
     username: ${RDS_USERNAME}
     password: ${RDS_PASSWORD}
     pool:
