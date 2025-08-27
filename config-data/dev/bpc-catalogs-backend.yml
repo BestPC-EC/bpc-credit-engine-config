@@ -7,7 +7,7 @@ server:
 
 spring:
   application:
-    name: bpc-catalogos-backend
+    name: bpc-catalogs-backend
 
   datasource:
     driverClassName: org.mariadb.jdbc.Driver
