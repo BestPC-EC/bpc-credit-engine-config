@@ -7,7 +7,7 @@ server:
 
 spring:
   application:
-    name: bpc-credit-engine-admin
+    name: bpc-catalogos-backend
 
   datasource:
     driverClassName: org.mariadb.jdbc.Driver
