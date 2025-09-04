@@ -21,6 +21,9 @@ spring:
         locator:
           enabled: true
   security:
+    user:
+      name: root
+      password: s3cr3t
     oauth2:
       resourceserver:
         jwt:
