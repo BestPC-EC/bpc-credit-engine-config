@@ -70,6 +70,8 @@ api:
     url: ${BPC_SCRAPPING_PROVIDER_URL}
   bpc-company:
     url: ${BPC_COMPANY_URL}
+  bpc-credit-engine:
+    url: ${BPC_CREDIT_ENGINE_URL}
 
 power-automate:
   base-url: ${PA_BASE_URL}
