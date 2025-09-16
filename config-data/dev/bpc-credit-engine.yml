@@ -48,8 +48,6 @@ api:
     url: ${BPC_SRI_PUBLIC_URL}
   bpc-company:
     url: ${BPC_COMPANY_URL}
-  bpc-customer:
-    url: ${BPC_CUSTOMER_URL}
 
 convertapi:
   secretKey: ${CONVERTAPI_KEY}
