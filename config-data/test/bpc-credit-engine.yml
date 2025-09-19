@@ -1,20 +1,9 @@
 server:
   port: 8091
-  tomcat:
-    connection-timeout: 90000
-    max-threads: 200 # Ajusta el número de threads disponibles
-  servlet:
-    session:
-      timeout: 5m
 spring:
-  cloud:
-    gateway:
-      httpclient:
-        connect-timeout: 30000 # Timeout de conexión en milisegundos
-        response-timeout: 300000 # Timeout de respuesta en milisegundos (5 minutos)
   datasource:
     driverClassName: org.mariadb.jdbc.Driver
-    url: jdbc:mariadb://${RDS_HOSTNAME}:${RDS_PORT}/${RDS_DB_NAME}?autoReconnect=true
+    url: jdbc:mariadb://${RDS_HOSTNAME}:${RDS_PORT}/${RDS_DB_NAME}
     username: ${RDS_USERNAME}
     password: ${RDS_PASSWORD}
   devtools:
@@ -22,7 +11,7 @@ spring:
       enable: false
   mvc:
     async:
-      request-timeout: 600000
+      request-timeout: 360000
   codec:
     max-in-memory-size: 60MB
 
@@ -57,6 +46,12 @@ api:
     url: ${BPC_SYNCHRONIZER_URL}
   bpc-sri-public:
     url: ${BPC_SRI_PUBLIC_URL}
+  bpc-company:
+    url: ${BPC_COMPANY_URL}
+  bpc-management:
+    url: ${BPC_MANAGEMENT_URL}
+  bpc-notifier:
+    url: ${BPC_NOTIFIER_URL}
 
 convertapi:
   secretKey: ${CONVERTAPI_KEY}
