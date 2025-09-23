@@ -30,6 +30,6 @@ api:
   bpc-credit-engine:
     url: http://bpc-credit-engine
   bpc-parameter:
-    url: http://bpc-parameter/credit-engine/api/v1/parameter/policy/find
+    url: http://bpc-parameter/credit-engine/api/v1/parameter
   bpc-synchronizer:
     url: http://bpc-synchronizer/erp/api/v1/synchronizer
