@@ -72,6 +72,10 @@ api:
     url: ${BPC_COMPANY_URL}
   bpc-credit-engine:
     url: ${BPC_CREDIT_ENGINE_URL}
+  bpc-management:
+    url: ${BPC_MANAGEMENT_URL}
+  bpc-notifier:
+    url: ${BPC_NOTIFIER_URL}
 
 power-automate:
   base-url: ${PA_BASE_URL}
