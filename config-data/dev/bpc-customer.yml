@@ -76,6 +76,8 @@ api:
     url: ${BPC_MANAGEMENT_URL}
   bpc-notifier:
     url: ${BPC_NOTIFIER_URL}
+  bpc-synchronizer:
+    url: ${BPC_SYNCHRONIZER_URL}
 
 power-automate:
   base-url: ${PA_BASE_URL}
