@@ -68,6 +68,8 @@ api:
     url: ${BPC_PARAMETER_URL}
   bpc-scrapping-provider:
     url: ${BPC_SCRAPPING_PROVIDER_URL}
+  bpc-company:
+    url: ${BPC_COMPANY_URL}
   bpc-management:
     url: ${BPC_MANAGEMENT_URL}
   bpc-notifier:
