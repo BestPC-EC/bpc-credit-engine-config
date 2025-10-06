@@ -46,8 +46,6 @@ api:
     url: ${BPC_SYNCHRONIZER_URL}
   bpc-sri-public:
     url: ${BPC_SRI_PUBLIC_URL}
-  bpc-company:
-    url: ${BPC_COMPANY_URL}
   bpc-management:
     url: ${BPC_MANAGEMENT_URL}
   bpc-notifier:
