@@ -13,11 +13,14 @@ spring:
     password: ${MAIL_PASSWORD}
     properties:
       mail:
+        debug: true
         smtp:
           auth: true
           starttls:
             enable: true
             required: true
+          ssl:
+            enable: false
           connectiontimeout: 5000
           timeout: 5000
           writetimeout: 5000
