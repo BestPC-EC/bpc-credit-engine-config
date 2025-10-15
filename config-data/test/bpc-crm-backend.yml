@@ -47,3 +47,7 @@ api:
     url: lb://bpc-security/api/v1/management
   bpc-company:
     url: lb://bpc-company/api/v1/company
+  bpc-customer:
+    url: lb://bpc-customer/credit-engine/api/v1/customer
+    
+  
