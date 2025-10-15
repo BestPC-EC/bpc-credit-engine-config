@@ -1,11 +1,11 @@
 server:
   port: 8090
   tomcat:
-    connection-timeout: 90000
+    connection-timeout: 90000 # Timeout de conexión (90 segundos)
     max-threads: 200 # Ajusta el número de threads disponibles
   servlet:
     session:
-      timeout: 5m
+      timeout: 5m # Tiempo de sesión en minutos
 spring:
   cloud:
     gateway:
@@ -27,7 +27,7 @@ spring:
       enable: false
   mvc:
     async:
-      request-timeout: 600000
+      request-timeout: 360000
   codec:
     max-in-memory-size: 5MB
     
@@ -68,10 +68,16 @@ api:
     url: ${BPC_PARAMETER_URL}
   bpc-scrapping-provider:
     url: ${BPC_SCRAPPING_PROVIDER_URL}
+  bpc-company:
+    url: ${BPC_COMPANY_URL}
+  bpc-credit-engine:
+    url: ${BPC_CREDIT_ENGINE_URL}
   bpc-management:
     url: ${BPC_MANAGEMENT_URL}
   bpc-notifier:
     url: ${BPC_NOTIFIER_URL}
+  bpc-synchronizer:
+    url: ${BPC_SYNCHRONIZER_URL}
 
 power-automate:
   base-url: ${PA_BASE_URL}
